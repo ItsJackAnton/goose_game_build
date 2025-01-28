@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <title>Frenzy Miner</title>
+    <title>Goose</title>
     <link rel="shortcut icon" href="./TemplateData/favicon.ico" />
     <link rel="stylesheet" href="./TemplateData/style.css" />
     <script src="../TemplateData/noble-curves.js"></script>
@@ -33,7 +33,7 @@
         codeUrl: buildUrl + "/goose_game_build.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Frenzy Miner",
+        productName: "Goose",
         productVersion: "0.1.0",
 
         // #if MEMORY_FILENAME
@@ -51,28 +51,6 @@
         "#unity-fullscreen-button"
       );
       // const loader = document.getElementById('unity-loader-circle-base');
-
-      const unityLogo = document.getElementById("unity-title-img");
-      const unityImage = document.getElementById("unity-logo-img");
-
-      const playerSettingsUnityLogo = "";
-      const playerSettingsUnityImage = "";
-
-      if (
-        playerSettingsUnityLogo !== "" &&
-        playerSettingsUnityLogo.includes("{") == false
-      ) {
-        console.log(`Override Unity Logo \"${playerSettingsUnityLogo}\"`);
-        unityLogo.src = playerSettingsUnityLogo;
-      }
-      if (
-        playerSettingsUnityImage !== "" &&
-        playerSettingsUnityImage.includes("{") == false
-      ) {
-        console.log(`Override Unity Image \"${playerSettingsUnityImage}\"`);
-
-        unityImage.src = playerSettingsUnityImage;
-      }
 
       const canFullscreen = (function () {
         for (const key of [
